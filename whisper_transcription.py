@@ -1,0 +1,6 @@
+import whisper
+
+model = whisper.load_model("base")
+result = model.transcribe("video.mp4", language="es")
+
+print(result["text"])
